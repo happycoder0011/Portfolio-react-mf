@@ -1,5 +1,4 @@
 {
-    "conventionalCommits.scopes": [
-        "Setup"
-    ]
+  "conventionalCommits.scopes": ["Setup"],
+  "workbench.colorCustomizations": {}
 }
