@@ -8,6 +8,8 @@ import AboutMePage from './Page/AboutMePage'
 import LandingPage from './Page/Landing Page'
 
 import './index.scss'
+import BuildtPage from './Page/BuildtPage'
+import BlogPage from './Page/BlogPage'
 
 const router = createBrowserRouter([
   {
@@ -20,11 +22,11 @@ const router = createBrowserRouter([
   },
   {
     path: ROUTES.BUILDT,
-    element: <LandingPage />
+    element: <BuildtPage />
   },
   {
     path: ROUTES.BLOG,
-    element: <AboutMePage />
+    element: <BlogPage />
   }
 ])
 

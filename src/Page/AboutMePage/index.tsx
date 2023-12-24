@@ -4,7 +4,7 @@ import { data } from '../../data'
 
 const AboutMePage = () => {
   return (
-    <div className='flex flex-col max-w-screen-md justify-center m-auto px-4 overflow-auto'>
+    <div className='flex flex-col max-w-screen-md justify-center m-auto pt-40 pb-24 px-4 sm:pt-4 overflow-auto h-screen'>
       <div>
         <img src='https://placehold.co/128' className='rounded-full' />
       </div>

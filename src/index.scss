@@ -291,26 +291,6 @@ small {font-size: 0.750rem; /* 12px */}
   left: -6%;
 }
 
-.card-color-0 {
-  background-color: ivory;
-}
-
-.card-color-1 {
-  background: rgb(231, 27, 13);
-  background: linear-gradient(
-    90deg,
-    rgba(231, 27, 13, 1) 0%,
-    rgba(255, 255, 255, 1) 73%
-  );
-}
-
-.card-color-2 {
-  background-color: ivory;
-}
-
-.card-color-3 {
-  background-color: ivory;
-}
 
 .card {
   transition: opacity 200ms linear 320ms, transform 200ms ease-out 320ms;
