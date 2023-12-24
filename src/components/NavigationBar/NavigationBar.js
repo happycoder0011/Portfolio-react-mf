@@ -6,7 +6,7 @@ function Navbar() {
     return (
         <div>
             {/* <!-- Navbar --> */}
-            <div class={styles.navbar}>
+            <div className={styles.navbar}>
                 <ul>
                     <li>
                         <a href={ROUTES.HOME}>Home</a>
@@ -15,10 +15,10 @@ function Navbar() {
                         <a href={ROUTES.ABOUT_ME}>About Me</a>
                     </li>
                     <li>
-                        <a href={ROUTES.TECH_STUFF}>Tech Stuff</a>
+                        <a href={ROUTES.BUILDT}>Buildt</a>
                     </li>
                     <li>
-                        <a href={ROUTES.RESUME}>Resume</a>
+                        <a href={ROUTES.BLOG}>Blog</a>
                     </li>
                 </ul>
             </div>

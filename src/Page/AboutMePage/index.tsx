@@ -4,7 +4,7 @@ import { data } from '../../data'
 
 const AboutMePage = () => {
   return (
-    <div className='flex flex-col max-w-screen-md justify-center m-auto'>
+    <div className='flex flex-col max-w-screen-md justify-center m-auto px-4 overflow-auto'>
       <div>
         <img src='https://placehold.co/128' className='rounded-full' />
       </div>
@@ -16,14 +16,43 @@ const AboutMePage = () => {
         ))}
 
         <div>
-          Welcome to my world. Living my best life writing code, solving
-          problem, reading literature, writing poetry, travelling places &
-          experiencing life. Create.Cherish.Code.
+          <h4>Welcome to my world.</h4>
+          <h4>Living my best life !!</h4>
+          <h4> writing code,</h4>
+          <h4>solving problem, reading literature,</h4>
+          <h4>writing poetry, travelling places</h4>
+          <h4>& experiencing life.</h4>
+          <h4>Create . Cherish . Code . </h4>
+          <br />
           <div>
-            I'm open to partnering on side projects, mentoring, brainstorming,
-            beta testing new products, freelance website development,technical
-            writing, joining a book club, reviewing book proposals, and writing
-            blog posts.
+            I'm open to partnering on{' '}
+            <span className='hover:text-blue-500 cursor-pointer border-b border-dotted'>
+              side projects,
+            </span>{' '}
+            <span className='hover:text-red-500 cursor-pointer border-b border-dotted'>
+              mentoring,
+            </span>{' '}
+            <span className='hover:text-green-500 cursor-pointer border-b border-dotted'>
+              brainstorming,
+            </span>{' '}
+            <span className='hover:text-yellow-500 cursor-pointer border-b border-dotted'>
+              beta testing new products,
+            </span>{' '}
+            <span className='hover:text-red-100 cursor-pointer border-b border-dotted'>
+              freelance website development,
+            </span>{' '}
+            <span className='hover:text-pink-500 cursor-pointer border-b border-dotted'>
+              technical writing,
+            </span>{' '}
+            <span className='hover:text-purple-500 cursor-pointer border-b border-dotted'>
+              joining a book club,
+            </span>{' '}
+            <span className='hover:text-yellow-500 cursor-pointer border-b border-dotted'>
+              reviewing book proposals,
+            </span>{' '}
+            <span className='hover:text-green-500 cursor-pointer border-b border-dotted'>
+              and writing blog posts.
+            </span>{' '}
           </div>
         </div>
       </div>

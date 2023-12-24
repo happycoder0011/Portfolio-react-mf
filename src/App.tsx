@@ -1,27 +1,40 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-import "./index.scss";
-import LandingPage from "./Page/Landing Page";
-import { ROUTES } from "./constants/route.constants";
-import AboutMePage from "./Page/AboutMePage";
+import Navbar from './components/NavigationBar'
+import { ROUTES } from './constants/route.constants'
+import AboutMePage from './Page/AboutMePage'
+import LandingPage from './Page/Landing Page'
+
+import './index.scss'
 
 const router = createBrowserRouter([
   {
     path: ROUTES.HOME,
-    element: <LandingPage />,
+    element: <LandingPage />
   },
   {
     path: ROUTES.ABOUT_ME,
-    element: <AboutMePage />,
+    element: <AboutMePage />
   },
-]);
+  {
+    path: ROUTES.BUILDT,
+    element: <LandingPage />
+  },
+  {
+    path: ROUTES.BLOG,
+    element: <AboutMePage />
+  }
+])
 
 ReactDOM.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <div className='star__body'>
+      <Navbar />
+      <RouterProvider router={router}></RouterProvider>
+    </div>
   </React.StrictMode>,
-  
-  document.getElementById("app")
-);
+
+  document.getElementById('app')
+)

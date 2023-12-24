@@ -1,17 +1,13 @@
-import React from "react";
-import Name from "./component/Name";
-import Navbar from "./component/Navbar";
-import Stars from "./component/Star";
+import React from 'react'
+import Name from './component/Name'
+import Stars from './component/Star'
 
-function LandingPage() {
+function LandingPage () {
   return (
-    <div className="star__body">
-      <Navbar />
-      <Stars>
-        <Name />
-      </Stars>
-    </div>
-  );
+    <Stars>
+      <Name />
+    </Stars>
+  )
 }
 
-export default LandingPage;
+export default LandingPage

@@ -10,9 +10,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 600px;
     justify-content: space-around;
     align-content: flex-start;
-    width: 600px;
     text-align: center;
   }
   
@@ -27,13 +27,12 @@
   }
   
   .navbar a {
-    color: ivory;
+    color: var(--text);
     text-decoration: none;
     letter-spacing: 0.15rem;
     display: inline-block;
     padding: 15px 20px;
     position: relative;
-    font-family: 'Fredoka One',cursive;
     font-size: 20px;
   
   }
@@ -46,7 +45,7 @@
     height: 2px;
     left: 50%;
     position: absolute;
-    background: white;
+    background: var(--text);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }
@@ -57,8 +56,10 @@
   }
   
   @media (max-width: 600px){
+    /* Styles for screens with a width of 600 pixels or less */
     ul{
         margin-top: auto;
+        width: max-content !important;
     }
     .navbar a {
       font-size: 10px;
