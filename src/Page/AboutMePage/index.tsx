@@ -1,9 +1,19 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
+import { ROUTES } from '../../constants/route.constants'
+
 import Badge from '../../components/Badge/Badge'
 import profile from '../../../Assets/profile.jpg'
 import { data } from '../../data'
-
+import styles from './index.module.scss'
 const AboutMePage = () => {
+
+  const navigate = useNavigate();
+
+  const handleReadClick = () => {
+    navigate(ROUTES.READ);
+  };
+
   return (
     <div className='flex flex-col max-w-screen-md justify-center m-auto pt-40 pb-24 px-4 sm:pt-4 overflow-auto h-screen'>
       <div>
@@ -20,7 +30,7 @@ const AboutMePage = () => {
           <h4>Welcome to my world.</h4>
           <h4>Living my best life !!</h4>
           <h4> writing code,</h4>
-          <h4>solving problem, reading literature,</h4>
+          <h4>solving problem, <span className={styles.hovereffect} onClick={handleReadClick}>reading literature</span>,</h4>
           <h4>writing poetry, travelling places</h4>
           <h4>& experiencing life.</h4>
           <h4>Create . Cherish . Code . </h4>

@@ -5,11 +5,12 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Navbar from './components/NavigationBar'
 import { ROUTES } from './constants/route.constants'
 import AboutMePage from './Page/AboutMePage'
-import LandingPage from './Page/Landing Page'
+import LandingPage from './Page/LandingPage'
 
 import './index.scss'
 import BuildtPage from './Page/BuildtPage'
 import BlogPage from './Page/BlogPage'
+import ReadsPage from './Page/ReadsPage'
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path: ROUTES.BLOG,
     element: <BlogPage />
+  },
+  {
+    path: ROUTES.READ,
+    element: <ReadsPage/>
   }
 ])
 

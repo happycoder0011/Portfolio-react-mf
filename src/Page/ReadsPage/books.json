@@ -1,0 +1,50 @@
+{
+    "data": [
+      {
+        "title": "The Kite Runner",
+        "author": "Khaled Hosseini",
+        "coverImage": "https://covers.openlibrary.org/b/id/14345539-M.jpg"
+      },
+      {
+        "title": "Thinking, Fast and Slow",
+        "author": "Daniel Kahneman",
+        "coverImage": "https://covers.openlibrary.org/b/id/12571352-M.jpg"
+      },
+      {
+        "title": "Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future",
+        "author": "Ashlee Vance",
+        "coverImage": "https://covers.openlibrary.org/b/id/7359078-M.jpg"
+      },
+      {
+        "title": "The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life",
+        "author": "Mark Manson",
+        "coverImage": "https://covers.openlibrary.org/b/id/12832270-M.jpg"
+      },
+      {
+        "title": "Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones",
+        "author": "James Clear",
+        "coverImage": "https://covers.openlibrary.org/b/id/12886417-M.jpg"
+      },
+      {
+        "title": "The Story of My Life (Enriched Classics)",
+        "author": "Helen Keller",
+        "coverImage": "https://covers.openlibrary.org/b/id/13398438-L.jpg"
+      },
+      {
+        "title": "It Ends with Us (It Ends with Us, #1)",
+        "author": "Colleen Hoover",
+        "coverImage": "https://covers.openlibrary.org/b/id/14604614-M.jpg"
+      },
+      {
+        "title": "A Little Life",
+        "author": "Hanya Yanagihara",
+        "coverImage": "https://covers.openlibrary.org/b/id/12065783-M.jpg"
+      },
+      {
+        "title": "Man’s Search for Meaning",
+        "author": "Viktor E. Frankl",
+        "coverImage": "https://covers.openlibrary.org/b/id/8513051-M.jpg"
+      }
+    ]
+  }
+  

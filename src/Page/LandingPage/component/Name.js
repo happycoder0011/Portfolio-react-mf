@@ -5,9 +5,9 @@ function Name() {
   return (
     <div>
       {/* <!-- Name Section --> */}
-      <div class="name">
-        <h1 class="name--font">Sheetal Singh</h1>
-        <div class="name--svg">
+      <div className="name">
+        <h1 className="name--font">Sheetal Singh</h1>
+        <div className="name--svg">
           {/* <!-- github --> */}
           <a href="https://github.com/happycoder0011">
             <svg

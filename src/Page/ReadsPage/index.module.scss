@@ -1,0 +1,107 @@
+.image {
+    aspect-ratio: 16/9;
+}
+.books {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  top: 40px;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  height: 80vh;
+  padding: 20px;
+  padding-top: 50px;
+
+}
+.book_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 400px;
+    margin-bottom: 155px;
+  }
+  
+  @keyframes initAnimation {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(-45deg);
+    }
+  }
+  
+  .book {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(-45deg);
+    transition: 2s ease;
+    animation: 1s ease 0s 1 initAnimation;
+  }
+  
+  .book_container:hover .book, 
+  .book_container:focus .book {
+    transform: rotateY(0deg);
+  }
+  
+  .book > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    width: 200px;
+    height: 350px;
+    transform: translateZ(32.5px);
+    background-color: #01060f;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 5px 5px 20px #666;
+  }
+  
+  .book::before {
+    position: absolute;
+    content: ' ';
+    background-color: blue;
+    left: 0;
+    top: 2px;
+    width: 63px;
+    height: 346px;
+    transform: translateX(165.5px) rotateY(90deg);
+    background: linear-gradient(90deg, 
+      #fff 0%,
+      #f9f9f9 5%,
+      #fff 10%,
+      #f9f9f9 15%,
+      #fff 20%,
+      #f9f9f9 25%,
+      #fff 30%,
+      #f9f9f9 35%,
+      #fff 40%,
+      #f9f9f9 45%,
+      #fff 50%,
+      #f9f9f9 55%,
+      #fff 60%,
+      #f9f9f9 65%,
+      #fff 70%,
+      #f9f9f9 75%,
+      #fff 80%,
+      #f9f9f9 85%,
+      #fff 90%,
+      #f9f9f9 95%,
+      #fff 100%
+      );
+  }
+  
+  .book::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: ' ';
+    width: 200px;
+    height: 350px;
+    transform: translateZ(-32.5px);
+    background-color: #01060f;
+    border-radius: 0 5px 5px 0;
+    box-shadow: -10px 0 50px 10px #666;
+  }
